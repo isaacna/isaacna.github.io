@@ -1,2 +1,2 @@
-# dailyfeed.py
-This is my personal web page 
+# isaacna.github.io
+This is my personal web page showcasing my experiences. 
