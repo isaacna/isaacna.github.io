@@ -2,7 +2,9 @@ body {
     background-color: #ccffcc;
     font-family: Verdana;
     text-align:left;
-    max-width: 800px;
+    width: 100%;
+    margin:0;
+    padding:0;
 }
 
 a {
@@ -12,4 +14,21 @@ a {
 
 a:hover {
     color: blue;
+}
+
+td {
+    padding-bottom: .5em;
+}
+
+#intro {
+    max-width: 800px;
+}
+
+#resume {
+    background-color: #99ccff;
+}
+
+#contact {
+    background-color: #ffcc99;
+    width: 100%;
 }
