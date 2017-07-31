@@ -1,5 +1,5 @@
 body {
-    background-color: #ccffcc;
+    background-color: green;
     font-family: Verdana;
     padding-right:300px;
 }
@@ -11,5 +11,4 @@ a {
 
 a:hover {
     color: blue;
-    text-decoration: underline;
 }
