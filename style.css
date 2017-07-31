@@ -1,12 +1,15 @@
 body {
     background-color: #ccffcc;
     font-family: Verdana;
+    padding-right:300px;
 }
 
-#resume {
-   
+a {
+    color: black;
+    text-decoration: underline;
 }
 
-#contact {
-    
+a:hover {
+    color: blue;
+    text-decoration: underline;
 }
