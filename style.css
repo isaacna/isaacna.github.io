@@ -1,7 +1,8 @@
 body {
-    background-color: green;
+    background-color: #ccffcc;
     font-family: Verdana;
-    padding-right:300px;
+    text-align:left;
+    max-width: 800px;
 }
 
 a {
