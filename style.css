@@ -17,12 +17,17 @@ a:hover {
 
 td {
     padding-bottom: .5em;
-    padding-left: .25em
+    padding-left: .5em;
+    white-space:nowrap;
+}
+
+tr {
+    width: 100%;
 }
 
 #intro {
     max-width: 800px;
-    padding-left: .25em;
+    padding-left: .5em;
 }
 
 #resume {
