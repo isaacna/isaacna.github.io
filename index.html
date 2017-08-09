@@ -6,6 +6,16 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <title>Isaac Na</title>
   <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+  <style>
+    table {
+        border-collapse: separate;
+        border-spacing: 1em;
+    }
+
+    body {      
+        font-family: Verdana;
+    }
+  </style>
 </head>
 
 <body>
@@ -14,15 +24,15 @@
         <h1>Isaac Na</h1>
     </div>
     <div class="jumbotron">
-        <table>
+        <table cellspacing="15">
             <tr>
                 <td>
-            <img src="pic.jpg" height="200" width="200">
+                  <img src="pic.jpg" height="200" width="200">
                 </td>
                 <td>
-            <h3> About Me</h3>
-            I'm a Computer Science Major and Finance minor at Washington University in St. Louis, Class of 2019. I hope to pursue a career as a software engineer.
-            </td>
+                  <h3> About Me</h3>
+                  I'm a Computer Science Major and Finance minor at Washington University in St. Louis, Class of 2019. I hope to pursue a career as a software engineer.
+                </td>
             </tr>
         </table>
 
@@ -30,21 +40,31 @@
 
     <div class="row">
       <h1 align="center">Experience</h1>
-      <div class="col-sm-4 col-xs-4">
-        <strong><i>Software Development Intern at AT&T - Atlanta, GA</i></strong>
-        <li> Developed logging system in Java that pulls metrics from Elasticsearch and formats a report in Outlook mail </li>
-        <li> Developed general purpose Chatbot for Q Enterprise Messenger that implemented ML and NLP</li>
-        <li> Learned to work on a team using Agile methodology </li>
+      <div class="col-sm-4 col-xs-12" align="center">
+        <a href="#ATT" class="btn btn-info" data-toggle="collapse">AT&T Software Development Intern</a>
+          <div id="ATT" class="collapse">
+            <strong><i>Software Development Intern at AT&T - Atlanta, GA</i></strong>
+            <li> Developed logging system in Java that pulls metrics from Elasticsearch and formats a report in Outlook mail </li>
+            <li> Developed general purpose Chatbot for Q Enterprise Messenger that implemented ML and NLP</li>
+            <li> Learned to work on a team using Agile methodology </li>
+          </div>
       </div>
-      <div class="col-sm-4 col-xs-4">
-        <strong><i>Teaching Assistant for Intro CS and Data Structures & Algorithms - St. Louis, MO</i></strong>
-        <li>Assist professors in lab sections and hold office hours for introductory Computer Science course </li>
-        <li>Evaluate syntax and programming style to record completion of assignments and projects</li>
+      <div class="col-sm-4 col-xs-12" align="center">
+        <a href="#ta" class="btn btn-info" data-toggle="collapse">Teaching Assistant</a>
+          <div id="ta" class="collapse">
+            <strong><i>Teaching Assistant for Intro CS and Data Structures & Algorithms - St. Louis, MO</i></strong>
+            <li>Assist professors in lab sections and hold office hours for introductory Computer Science course </li>
+            <li>Evaluate syntax and programming style to record completion of assignments and projects</li>
+          </div>
+
       </div>
-      <div class="col-sm-4 col-xs-4">
-        <strong><i>Research Assistant at Washington University School of Medicine - St. Louis, MO</i></strong>
-        <li>Worked on research projects in muscle physiology lab under Dr. Gretchen Meyer</li>
-        <li>Compiled and analyzed data using MATLAB and Excel</li>
+      <div class="col-sm-4 col-xs-12" align="center">
+        <a href="#research" class="btn btn-info" data-toggle="collapse">Research Assistant</a>
+          <div id="research" class="collapse">
+            <strong><i>Research Assistant at Washington University School of Medicine - St. Louis, MO</i></strong>
+            <li>Worked on research projects in muscle physiology lab under Dr. Gretchen Meyer</li>
+            <li>Compiled and analyzed data using MATLAB and Excel</li>
+          </div>
       </div>
     </div>
 
