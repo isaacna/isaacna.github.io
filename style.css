@@ -1,40 +1,27 @@
+table {
+    border-collapse: separate;
+    border-spacing: 1em;
+}
+
 body {
-    background-color: #ccffcc;
     font-family: Verdana;
-    text-align:left;
-    margin:0;
-    padding:0;
-}
-
-a {
-    color: black;
-    text-decoration: underline;
-}
-
-a:hover {
-    color: blue;
-}
-
-td {
-    padding-bottom: .5em;
-    padding-left: .5em;
-    white-space:nowrap;
-}
-
-tr {
-    width: 100%;
-}
-
-#intro {
-    max-width: 800px;
-    padding-left: .5em;
-}
-
-#resume {
-    background-color: #99ccff;
+    overflow-x: hidden;
 }
 
 #contact {
-    background-color: #ffcc99;
-    width: 100%;
+  background-color: #616161;
+  color: white;
+  position: absolute;
+  width: 100%;
+  left: 0;
+}
+
+.btn{
+  background-color: #616161;
+  border: 0 none;
+}
+@media (max-width: 768px) {
+[class*="col-"] {
+    margin-bottom: 5px;
+}
 }
