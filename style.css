@@ -27,7 +27,7 @@ body {
 }
 
 
-#icon:hover  {
+.icon:hover  {
   opacity: 0.5;
 }
 
@@ -42,4 +42,15 @@ img {
 
 .carousel-inner > .item > img {
   height: 400px;
+}
+
+li span {
+  position: relative;
+  left: -.5em;
+  padding: 0;
+  margin: 0;
+}
+
+.carousel .item > img {
+align: center;
 }
