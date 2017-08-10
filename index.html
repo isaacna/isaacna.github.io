@@ -17,7 +17,7 @@
     <div class="jumbotron">
           <div class="row">
             <div class="col-sm-6 col-xs-12 col-md-4" align="center">
-              <img src="images/pic.jpg" height="220" width="220">
+              <img src="images/pic.jpg" class="img-rounded" height="220" width="220">
             </div>
             <div class="col-sm-6 col-xs-12 col-md-8" align="left" id="about">
               <h3> About Me</h3>
@@ -91,39 +91,94 @@
     </div>
 
 
+    <div id="pictures" class="carousel slide" data-ride="carousel">
+
+      <!-- Indicator -->
+        <ol class="carousel-indicators">
+            <li data-target="#pictures" data-slide-to="0" class="active"></li>
+            <li data-target="#pictures" data-slide-to="1"></li>
+            <li data-target="#pictures" data-slide-to="2"></li>
+            <li data-target="#pictures" data-slide-to="3"></li>
+        </ol>
+
+        <!-- Wrapper -->
+        <div class="carousel-inner">
+            <div class="item active" align="center">
+                <img src="images/carousel/boatrock.jpg" alt="rip" >
+                <div class="carousel-caption">
+                  <h3>Boat Rock</h3>
+                </div>
+            </div>
+            <div class="item" align="center">
+                <img src="images/carousel/att.jpg" alt="rip">
+                <div class="carousel-caption">
+                  <h3>AT&amp;T SD Internship</h3>
+                </div>
+            </div>
+
+            <div class="item" align="center">
+                <img src="images/carousel/climateMarch.jpg" alt="rip" >
+                <div class="carousel-caption">
+                  <h3>STL Climate March</h3>
+                </div>
+            </div>
+
+            <div class="item" align="center" data-rotate="90">
+                <img src="images/carousel/apo.jpg" alt="rip" >
+                <div class="carousel-caption">
+                  <h3>Alpha Phi Omega</h3>
+                </div>
+            </div>
+         </div>
+
+        <a class="left carousel-control" href="#pictures" data-slide="prev">
+          <span class="glyphicon glyphicon-chevron-left"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="right carousel-control" href="#pictures" data-slide="next">
+          <span class="glyphicon glyphicon-chevron-right"></span>
+          <span class="sr-only">Next</span>
+        </a>
+    </div>
+
+    <div>
+
+    </div>
+
+    <br>
+
     <div id="contact">
       <h3 align="center">Contact</h3>
       <div class="row">
         <div class="col-sm-3 col-xs-3" align="center">
           <a href="https://www.instagram.com/isaac_na/" target="_blank">
-            <img src="images/instagram.png" alt="rip" style="width:42px;height:42px;border:0;" id="icon">
+            <img src="images/icons/instagram.png" alt="rip" style="width:42px;height:42px;border:0;" id="icon">
           </a>
         </div>
 
         <div class="col-sm-3 col-xs-3" align="center">
           <a href="https://www.linkedin.com/in/isaac-na-820b96115" target="_blank">
-            <img src="images/linkedin.png" alt="rip" style="width:42px;height:42px;border:0;" id="icon">
+            <img src="images/icons/linkedin.png" alt="rip" style="width:42px;height:42px;border:0;" id="icon">
           </a>
         </div>
 
         <div class="col-sm-3 col-xs-3" align="center">
           <a href="https://github.com/isaacna" target="_blank">
-            <img src="images/github.png" alt="rip" style="width:42px;height:42px;border:0;" id="icon">
+            <img src="images/icons/github.png" alt="rip" style="width:42px;height:42px;border:0;" id="icon">
           </a>
         </div>
 
         <div class="col-sm-3 col-xs-3" align="center">
           <a href="mailto:isaac219@gmail.com" target="_blank">
-            <img src="images/mail.png" alt="rip" style="width:42px;height:42px;border:0;" id="icon">
+            <img src="images/icons/mail.png" alt="rip" style="width:42px;height:42px;border:0;" id="icon">
           </a>
         </div>
       </div>
       <br>
     </div>
 
-  </div>
 
-
+</div>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
 </body>

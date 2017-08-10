@@ -30,3 +30,16 @@ body {
 #icon:hover  {
   opacity: 0.5;
 }
+
+img {
+    image-orientation: from-image;
+}
+
+.carousel {
+  height: 400px;
+  background-color: #616161;
+}
+
+.carousel-inner > .item > img {
+  height: 400px;
+}
