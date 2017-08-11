@@ -53,4 +53,5 @@ li span {
 
 .carousel .item > img {
 align: center;
+object-fit: contain
 }
