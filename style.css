@@ -67,8 +67,11 @@ img {
 }
 }
 
+.image-grid {
+  max-height: 300px;
+}
 
-.hover-dim:hover  {
+.image-grid:hover  {
   opacity: 0.5;
 }
 
