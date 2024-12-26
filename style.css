@@ -36,15 +36,21 @@ h1 {
   margin-top: 2rem;
 }
 
-.links a {
+/* .links a {
   color: #333;
   text-decoration: none;
   transition: all 0.2s ease;
-}
+} */
 
 .links img:hover {
   opacity: 0.7;
   transition: opacity 0.2s ease;
+}
+
+.gif {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 @media (max-width: 600px) {
