@@ -47,8 +47,13 @@ h1 {
   align-items: center;
 }
 
-.art {
+.art-div {
   margin-bottom: 2rem;
+}
+
+.art {
+  max-width: 100%;
+  height: auto;
 }
 
 @media (max-width: 600px) {
