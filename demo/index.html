@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Random Image Layout</title>
+  <style>
+    /* Full-screen container */
+    body {
+      margin: 0;
+      padding: 0;
+      position: relative;
+      height: 100vh;
+      overflow: hidden;
+      font-family: Arial, sans-serif;
+      background: #f6f4dd;
+    }
+    /* Randomly placed images */
+    .random-image {
+      position: absolute;
+      max-width: 200px;
+      max-height: 200px;
+      object-fit: cover;
+    }
+    /* Centered form overlay */
+    .form-overlay {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      z-index: 100;
+      background-color: rgba(255,255,255,0.9);
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+      text-align: center;
+    }
+    .form-overlay input,
+    .form-overlay button {
+      display: block;
+      margin: 10px auto;
+      width: 80%;
+      padding: 8px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      font-size: 1rem;
+    }
+    .form-overlay button {
+      cursor: pointer;
+      background-color: #007BFF;
+      color: #fff;
+      border: none;
+    }
+    .form-overlay button:hover {
+      background-color: #0056b3;
+    }
+  </style>
+</head>
+<body>
+  <!-- Form inputs centered in front -->
+  <div class="form-overlay">
+    <form id="myForm">
+      <input type="password" name="password" placeholder="Enter Password" required />
+      <button type="submit">Submit</button>
+    </form>
+  </div>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      // Array of image URLs; replace with your own images
+      const images = [
+        'images/demo/mak/1.jpeg',
+        'images/demo/mak/2.jpeg',
+        'images/demo/mak/3.jpeg',
+        'images/demo/mak/4.jpeg',
+        'images/demo/mak/5.jpeg',
+        'images/demo/mak/6.jpeg',
+      ];
+
+      // Function to place images randomly
+      function placeImages() {
+        // Remove existing images
+        document.querySelectorAll('.random-image').forEach(img => img.remove());
+
+        images.forEach(src => {
+          const img = document.createElement('img');
+          img.src = src;
+          img.classList.add('random-image');
+
+          // Calculate random position within viewport
+          const maxX = window.innerWidth - 150;
+          const maxY = window.innerHeight - 150;
+          const x = Math.random() * maxX;
+          const y = Math.random() * maxY;
+          img.style.left = x + 'px';
+          img.style.top = y + 'px';
+
+          document.body.appendChild(img);
+        });
+      }
+
+      // Initial placement
+      placeImages();
+
+      // Re-place images on window resize
+      window.addEventListener('resize', placeImages);
+
+      // Example form submit handler
+      document.getElementById('myForm').addEventListener('submit', e => {
+        e.preventDefault();
+        alert('Form submitted!');
+      });
+    });
+  </script>
+</body>
+</html>
